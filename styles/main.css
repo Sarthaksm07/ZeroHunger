@@ -1,0 +1,333 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8b400;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + .nav-links {
+        display: flex;
+    }
+}
+
+/* Example styles for the Tools page */
+#tools {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#tools h1 {
+    color: #333;
+}
+
+#tools ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tools ul li {
+    margin: 10px 0;
+}
+
+#tools ul li a {
+    text-decoration: none;
+    color: #f8b400;
+}
+
+#tools ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Example styles for the Community page */
+#community {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#community h1 {
+    color: #333;
+}
+
+#community ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#community ul li {
+    margin: 10px 0;
+}
+
+#community ul li a {
+    text-decoration: none;
+    color: #f8b400;
+}
+
+#community ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About page */
+.nav-links a.active {
+    border-bottom: 2px solid #f8b400; /* or any other style you prefer */
+}
+
+/* Example styles for the Resources page */
+#resources {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#resources h1 {
+    color: #333;
+}
+
+#resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources ul li {
+    margin: 10px 0;
+}
+
+#resources ul li a {
+    text-decoration: none;
+    color: #f8b400;
+}
+
+#resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8b400;
+    color: white;
+}
+
+#hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #f8b400;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Initiatives Section */
+#initiatives {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.initiative {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.initiative img {
+    width: 100%;
+    height: auto;
+}
+
+.initiative a {
+    text-decoration: none;
+    color: #f8b400;
+}
+
+/* Impact Section */
+#impact {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.statistic {
+    text-align: center;
+}
+
+.statistic h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.statistic p {
+    margin: 5px 0 0;
+}
+
+/* Events Section */
+#events {
+    padding: 20px;
+}
+
+#events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#events li {
+    margin-bottom: 10px;
+}
+
+/* Success Stories Section */
+#success-stories {
+    padding: 20px;
+}
+
+.story {
+    margin-bottom: 20px;
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call to Action Section */
+#call-to-action {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8b400;
+    color: white;
+}
+
+#call-to-action .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #f8b400;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Newsletter Section */
+#newsletter {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    padding: 10px;
+    background-color: #f8b400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
